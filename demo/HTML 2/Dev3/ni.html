@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+</head>
+<body>
+  <h2>Simple Calculator</h2>
+  <label>Enter first number: </label>
+  <input type="number" id="num1"><br><br>
+
+  <label>Enter second number: </label>
+  <input type="number" id="num2"><br><br>
+
+  <label>Enter operation (+, -, *, /, %): </label>
+  <input type="text" id="operation"><br><br>
+
+  <button onclick="calculate()">Calculate</button>
+
+  <script>
+    function add(a, b) {
+      return a + b;
+    }
+
+    function sub(a, b) {
+      return a - b;
+    }
+
+    function mul(a, b) {
+      return a * b;
+    }
+
+    function div(a, b) {
+      if (b === 0) return "Division by zero error";
+      return a / b;
+    }
+
+    function mod(a, b) {
+      return a % b;
+    }
+
+    function calculate() {
+      const a = parseFloat(document.getElementById("num1").value);
+      const b = parseFloat(document.getElementById("num2").value);
+      const op = document.getElementById("operation").value;
+      let result;
+
+      if (op === "+") {
+        result = add(a, b);
+      } else if (op === "-") {
+        result = sub(a, b);
+      } else if (op === "*") {
+        result = mul(a, b);
+      } else if (op === "/") {
+        result = div(a, b);
+      } else if (op === "%") {
+        result = mod(a, b);
+      } else {
+        result = "Invalid operation";
+      }
+
+      console.log("Result:", result);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+Selectors:
+5 types:
+1 ID-#
+2 class-.
+3 tag name
+4 universal-*
+5 group name-
+
+
+
+
+pseudo classes:
+hover
+visted
+active
+focus

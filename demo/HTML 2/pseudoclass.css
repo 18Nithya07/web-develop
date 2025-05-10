@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+}
+#navbar{
+    width: 100%;
+    height: 100px;
+    background-color:red ;
+}
+#section1{
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+
+}
+#section2{
+    width: 100%;
+    height: 100px;
+    background-color:green;
+
+}
+#section3{
+    width: 100%;
+    height: 100px;
+    background-color:brown;
+}
+#footer{
+    width: 100%;
+    height: 100px;
+    background-color:blueviolet;
+
+}
+#navbar>p{
+    line-height: 100px;
+}
+
+
+
+
+
+#navbar>p{
+    line-height: 50px;
+}
+

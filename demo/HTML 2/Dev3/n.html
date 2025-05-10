@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>WELCOME</h1>
+    <script>
+        //let input=window.prompt("Enter your age")
+        //console.log(typeof(input))
+        //input=parseInt(input)
+        //console.log(typeof(input))
+
+        let a = window.prompt("enter a number")
+        let b = window.prompt("enter another number")
+        a = parseInt(a)
+        b = parseInt(b)
+        let c = window.prompt("enter the operator")
+        if(c== "+")
+        {
+            addition(a,b)
+        }
+        else if(c== "-")
+        {
+            subtraction(a,b)
+        }
+        else if(c=="*")
+        {
+            multiplication(a,b)
+        }
+        else if(c== "%"){
+            modulus(a,b)
+        }
+        else{
+            division(a,b)
+        }
+        
+        function addition(a,b)
+        {
+            let c = a+b
+            console.log(c)
+        }
+        function subtraction(a,b)
+        {
+            let c = a-b
+            console.log(c)
+        }
+        function multiplication(a,b)
+        {
+            let c = a*b
+            console.log(c)
+        }
+        function modulus(a,b)
+        {
+            let c = a%b
+            console.log(c)
+        }
+        function division(a,b)
+        {
+            if(b==0){
+                console.log("DIVISION BY ZERO NOT POSSIBLE")
+            }
+            else{
+            let c = a/b
+            console.log(c)
+            }
+        }
+    </script>
+</body>
+</html>
